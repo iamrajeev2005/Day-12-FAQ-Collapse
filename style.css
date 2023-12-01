@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+html ,body{
+    height: 100%;
+    width: 100%;
+    background-color: #5e5e5e;
+}
+h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3vw;
+}
+h1 #one{
+color: rgb(248, 132, 0);
+}
+h1 #two{
+color: rgb(255, 255, 255);
+}
+h1 #three{
+color: rgb(60, 255, 0);
+}
+.faq-container{
+    margin: 2.5vw auto;
+    max-width: 600px;
+}
+.faq {
+    position: relative;
+    background-color: #d1d1d1;
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5),inset -1px -2px 10px rgba(0, 0, 0, 0.5);
+}
+.faq .faq-title{
+    font-size: 1.2rem;
+    padding: 10px 0px;
+}
+.faq .faq-text{
+    display: none;
+}
+.faq .faq-toggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #757575;
+    color: #fff;
+    cursor: pointer;
+}
+.faq .faq-toggle .ri-close-fill{
+    display: none;
+}
+.faq.active{
+    position: relative;
+    background-color: #fff;
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    transition: all .17s ease-in;
+}
+.faq.active .faq-title{
+    font-size: 1.2rem;
+    padding: 10px 0px;
+}
+.faq.active .faq-text{
+    display: block;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: green;
+}
+.faq.active .faq-toggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 11%;
+    right: 2%;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #757575;
+    color: #fff;
+    cursor: pointer;
+}
+.faq.active .faq-toggle .ri-arrow-down-s-line{
+    display: none;
+}
+.faq.active .faq-toggle .ri-close-fill{
+    display: block;
+}
